@@ -6,4 +6,4 @@ These are the projects proposed by [freecodecamp](https://www.freecodecamp.org/l
 
 * [Sabotage - Tribute Page]()
 
-<img src="https://i.imgur.com/K9PBtBv.png" alt="A screenshot of the Tribute Page project" align="right" width="400px">
+!["A screenshot of the Tribute Page project"](https://i.imgur.com/K9PBtBv.png)
