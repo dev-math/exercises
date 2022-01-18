@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* html, body { height: 100% } */
+/* img { display: block; max-width: 100%;} */
+
+:root {
+  --color-accent: #dba797;
+  --color-dark: #292039;
+  --color-light: #f3faff;
+  --ff-primary: "Hahmlet", serif;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-family: var(--ff-primary);
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* header */
+
+h1 {
+  color: var(--color-accent);
+  font-weight: 700;
+  text-align: center;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+  color: var(--color-accent);
+}
+
+/* sections light */
+
+main section:nth-child(odd) {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
