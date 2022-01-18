@@ -1,43 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Sabotage - Tribute Page</title>
-    <meta charset="UTF-8" />
+    <title>Tribute Page - Paulo Freire</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- remove after  -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
     <link href="styles/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Sabotage</h1>
-      <img src="" alt="audio icone">
-      <h2>Um branco e um preto unido, respostas que cala o ridículo</h2>
-      <img src="" alt="seta pra proxima seção">
+      <h1 id="title">Paulo Freire</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#">Uma breve introdução</a></li>
+          <li><a href="#">Curiosidades</a></li>
+          <li><a href="#">Leia mais</a></li>
+        </ul>
+      </nav>
+
+      <figure id="img-div">
+        <img id="image" src="" alt="Imagem do Paulo Freire em preto e branco e com os braços cruzados">
+        <figcaption id="img-caption">
+          <blockquote cite="http://acervo.bn.br/sophia_web/acervo/ISBN/9788577531646">
+            Educação não transforma o mundo. Educação muda pessoas. Pessoas transformam o mundo.
+        </figcaption>
+      </figure>
     </header>
 
-    <main>
-      <figure>
-        <img src="" alt="foto sabotage">
-      </figure>
-      <h2>1973 - 2003</h2>
+    <main id="main">
+      <section>
+        <img src="" alt="Imagem do Paulo Freire em um ambiente repleto de livros em prateleiras">
+        <h2>Uma breve introdução</h2>
+        <p id="tribute-info"><strong>Paulo Reglus Neves Freire</strong> foi um <strong>educador e filósofo brasileiro.</strong> É considerado <strong>um dos pensadores mais notáveis na história da pedagogia mundial</strong>, tendo influenciado o movimento chamado pedagogia crítica. É também o <strong>Patrono da Educação Brasileira</strong>.</p>
+      </section>
 
-      <p>
-        Mauro Mateus dos Santos, mais conhecido pelo seu nome artístico
-        Sabotage, foi um rapper, cantor, compositor e ator brasileiro. Sabotage,
-        foi um rapper, cantor, compositor e ator brasileiro. Sabotage, foi um
-        rapper, cantor, compositor e ator brasileiro. Sabotage, foi um rapper,
-        cantor, compositor e ator brasileiro.
-      </p>
+      <section>
+        <h2>Curiosidades</h2>
+        <ul>
+          <li>
+            Paulo Freire é um dos homenageados na estátua Efter Badet, que fica na Suécia.
+            <img src="" alt="#">
+          </li>
 
-      <button type="button">Leia mais</button>
+          <li>
+            Lecionou em Harvard durante 10 meses no período de seu exílio.
+            <img src="" alt="#">
+          </li>
+        </ul>
+        <p>Você pode ler mais curiosidades em <a href="">AppSindicato</a></p>
+      </section>
+
+      <section>
+        <!-- <h2>Leia mais</h2> -->
+        <p>Ficou curioso para conhecer mais sobre esse grande educador?</p>
+        <a id="tribute-link" target="_blank" href="">Wikipédia</a>
+      </section>
+
+      <footer>
+        <p>Feito por <strong>@dev-math</strong></p>
+      </footer>
     </main>
-
-    <footer>
-      <ul>
-        Ouça sabotage
-        <li>Spotify</li>
-      </ul>
-
-      <p>Feito por @dev-math</p>
-    </footer>
   </body>
 </html>
