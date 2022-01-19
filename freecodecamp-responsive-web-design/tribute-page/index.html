@@ -4,78 +4,67 @@
     <title>Tribute Page - Paulo Freire</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- remove after  -->
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-
     <link href="styles/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   </head>
   <body>
-    <header>
-      <div class="content">
-        <h1 id="title">Paulo Freire</h1>
+    <header class="container">
+      <h1 id="title">Paulo Freire</h1>
 
-        <nav>
-          <ul>
-            <li><a href="#">Uma breve introdução</a></li>
-            <li><a href="#">Curiosidades</a></li>
-            <li><a href="#">Leia mais</a></li>
-          </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#section-intro">Uma breve introdução</a></li>
+          <li><a href="#section-facts">Curiosidades</a></li>
+          <li><a href="#section-read-more">Leia mais</a></li>
+        </ul>
+      </nav>
 
-        <figure id="img-div">
-          <img id="image" src="images/paulofreire-hero.png" alt="Imagem do Paulo Freire em preto e branco e com os braços cruzados">
-          <figcaption id="img-caption">
-            <blockquote cite="http://acervo.bn.br/sophia_web/acervo/ISBN/9788577531646">Educação não transforma o mundo. Educação muda pessoas. Pessoas transformam o mundo.</blockquote>
-          </figcaption>
-        </figure>
-      </div>
+      <figure id="img-div">
+        <img id="image" src="images/paulofreire-hero.png" alt="Imagem do Paulo Freire em preto e branco e com os braços cruzados">
+        <figcaption id="img-caption">
+          <blockquote cite="http://acervo.bn.br/sophia_web/acervo/ISBN/9788577531646">Educação não transforma o mundo. Educação muda pessoas. Pessoas transformam o mundo.</blockquote>
+        </figcaption>
+      </figure>
     </header>
 
     <main id="main">
-      <section>
-        <div class="content">
-
-          <img class="intro-img" src="images/paulofreire-intro.jpg" alt="Imagem do Paulo Freire em um ambiente repleto de livros em prateleiras">
-          <h2>Uma breve introdução</h2>
-          <p id="tribute-info"><strong>Paulo Reglus Neves Freire</strong> foi um <strong>educador e filósofo brasileiro.</strong> É considerado <strong>um dos pensadores mais notáveis na história da pedagogia mundial</strong>, tendo influenciado o movimento chamado pedagogia crítica. É também o <strong>Patrono da Educação Brasileira</strong>.</p>
-        </div>
+      <section class="container" id="section-intro">
+        <img class="section-img" src="images/paulofreire-intro.jpg" alt="Imagem do Paulo Freire em um ambiente repleto de livros em prateleiras">
+        <h2>Uma breve introdução</h2>
+        <p id="tribute-info"><strong>Paulo Reglus Neves Freire</strong> foi um <strong>educador e filósofo brasileiro.</strong> É considerado <strong>um dos pensadores mais notáveis na história da pedagogia mundial</strong>, tendo influenciado o movimento chamado pedagogia crítica. É também o <strong>Patrono da Educação Brasileira</strong>.</p>
       </section>
 
-      <section>
-        <div class="content">
-          <h2>Curiosidades</h2>
-          <ul>
-            <li>
-              Paulo Freire é um dos homenageados na estátua Efter Badet, que fica na Suécia.
-              <img src="images/estatua.png" alt="#">
-            </li>
+      <section class="container" id="section-facts">
+        <h2>Curiosidades</h2>
+        <ul>
+          <li>
+            Paulo Freire é um dos homenageados na estátua Efter Badet, que fica na Suécia.
+            <img src="images/efter-badet.jpeg" alt="Foto da escultura Efter Badet: esculpida em calcário e representando 7 diferentes figuras sendo uma delas Paulo Freire.">
+          </li>
 
-            <li>
-              Lecionou em Harvard durante 10 meses no período de seu exílio.
-              <img src="images/harvard.jpg" alt="#">
-            </li>
-          </ul>
-          <p>Você pode ler mais curiosidades em <a href="">AppSindicato</a></p>
-        </div>
+          <li>
+            Lecionou em Harvard durante 10 meses no período de seu exílio.
+            <img src="images/harvard.jpg" alt="Foto panorâmica da Universidade Harvard vista de cima.">
+          </li>
+        </ul>
+        <p>Você pode ler mais curiosidades em <a target="_blank" href="https://appsindicato.org.br/10-fatos-pouco-conhecidos-sobre-a-vida-de-paulo-freire/#:~:text=Professor%20em%20Harvard,Depois%2C%20foi%20para%20a%20Su%C3%AD%C3%A7a.">AppSindicato</a></p>
       </section>
 
-      <section>
-        <div class="content">
-          <!-- <h2>Leia mais</h2> -->
-          <p>Ficou curioso para conhecer mais sobre esse grande educador?</p>
-          <a id="tribute-link" target="_blank" href="">Wikipédia</a>
-        </div>
+      <section class="container" id="section-read-more">
+        <h2>
+          <span class="bi bi-book section-icon" aria-hidden="true"></span>
+          Ficou curioso para conhecer mais sobre esse grande educador?
+        </h2>
+        <a id="tribute-link" class="btn-dark" target="_blank" href="https://pt.wikipedia.org/wiki/Paulo_Freire">Wikipédia</a>
       </section>
 
       <footer>
-        <div class="content">
-          <p>Feito por <strong>@dev-math</strong></p>
-        </div>
+        <p>Feito por <strong><a target="_blank" href="https://github.com/dev-math">@dev-math</a></strong></p>
       </footer>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
