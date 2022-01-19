@@ -15,10 +15,15 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 /* html, body { height: 100% } */
-/* img { display: block; max-width: 100%;} */
+
+img {
+  display: block;
+  max-width: 100%;
+}
 
 :root {
   --color-accent: #dba797;
@@ -32,23 +37,59 @@ body {
   color: var(--color-light);
   font-family: var(--ff-primary);
   line-height: 1.5;
+}
+
+.content {
+  margin: 0 1.25em;
   text-align: center;
 }
 
 /* header */
 
+header {
+  min-height: 100vh;
+  margin-bottom: 1.44em;
+}
+
 h1 {
   color: var(--color-accent);
-  font-weight: 700;
-  text-align: center;
+  font-size: 3.13em;
+  font-weight: 400;
+  margin: 1.56rem 0;
 }
 
 nav {
   background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15%;
+  padding: 1em 0;
+}
+
+nav ul li {
+  margin: 0.17em 1.17em;
+  font-size: 1.88em;
+  text-transform: lowercase;
+}
+
+nav::before {
+  content: url("../images/menu.svg");
+}
+
+#img-div {
+  margin-top: 2em;
 }
 
 blockquote {
   color: var(--color-accent);
+  font-size: 1.25em;
+  quotes: initial;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
 }
 
 /* sections light */
@@ -56,4 +97,10 @@ blockquote {
 main section:nth-child(odd) {
   background-color: var(--color-light);
   color: var(--color-dark);
+}
+
+/* section introduction */
+
+.intro-img{
+  border-radius: 50%;
 }
