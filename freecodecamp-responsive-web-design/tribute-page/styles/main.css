@@ -55,13 +55,12 @@ body {
   font-size: 1.25rem;
   padding: 0.5em 1.5em;
   transition-duration: 0.4s;
-
 }
 
 .btn-dark:hover {
   background-color: var(--color-accent);
   color: var(--color-dark);
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 
 /* header */
@@ -83,7 +82,7 @@ nav {
   padding: 1rem 0;
 }
 
-nav ul li {
+nav ul {
   font-size: 1.2rem;
   margin: 0.17em 0;
   text-transform: lowercase;
@@ -168,8 +167,72 @@ footer {
 
 /* media queries */
 
-@media only screen and (min-width: 1em) {
+/* Laptops/Desktops (large devices) */
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 1.25rem 3.125rem;
+  }
+
+  h1 {
+    display: inline-block;
+  }
+
+  nav {
+    background-color: unset;
+    border-bottom: 2px solid var(--color-accent);
+  }
+
+  nav::before {
+    content: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.875rem;
+    justify-content: space-between;
+  }
+
+  figure {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  figure img {
+    width: 40vw;
+  }
+
+  figcaption {
+    font-size: 2.25rem;
+  }
+
+  #section-intro {
+    align-items: center;
+    display: grid;
+    gap: 3.125rem;
+    grid-template-areas: "content img";
+  }
+
+  .section-img {
+    border-radius: unset;
+    grid-area: img;
+  }
+
+  #section-facts ul {
+    align-items: flex-start;
+    display: flex;
+    gap: 3.125rem;
+  }
+
+  #section-facts ul img {
+    width: max(20em, 50%);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   html {
-    font-size: 50px;
+    font-size: 25px;
   }
 }
