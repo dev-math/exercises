@@ -1,0 +1,16 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+:root {
+  --ff-primary: "Example", sans-serif;
+}
+
+
