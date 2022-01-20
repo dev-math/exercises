@@ -20,8 +20,6 @@ ul {
   padding: 0;
 }
 
-/* html, body { height: 100% } */
-
 img {
   display: block;
   margin: 0 auto;
@@ -32,7 +30,7 @@ img {
   --color-accent: #dba797;
   --color-dark: #292039;
   --color-light: #f3faff;
-  --ff-primary: "Hahmlet", sans-serif;
+  --ff-primary: 'Hahmlet', sans-serif;
 }
 
 body {
@@ -89,7 +87,7 @@ nav ul {
 }
 
 nav::before {
-  content: url("../images/menu.svg");
+  content: url('../images/menu.svg');
 }
 
 figcaption {
@@ -212,7 +210,7 @@ footer {
     align-items: center;
     display: grid;
     gap: 3.125rem;
-    grid-template-areas: "content img";
+    grid-template-areas: 'content img';
   }
 
   .section-img {
