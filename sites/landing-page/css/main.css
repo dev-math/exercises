@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+html, body {
+  height: 100%;
+}
+
+:root {
+  --color-accent: #fc0;
+  --color-dark: #444;
+  --color-light: #fff;
+  --ff-primary: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-family: var(--ff-primary);
+  line-height: 1.5;
+  text-align: center;
+}
+
+footer,
+h1,
+section {
+  padding: 0.5em;
+}
+
+h1 {
+  color: var(--color-accent);
+}
+
+.hero-img {
+  border: 0.5em solid var(--color-accent);
+  box-shadow: 1em 1em #0ff;
+  margin: 1em auto;
+  width: 80vw;
+}
+
+button {
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: 1rem;
+  color: var(--color-dark);
+  margin: 0.3em auto;
+  padding: 0.2rem 1rem;
+}
+
+nav {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  background-color: var(--color-accent);
+  color: #000;
+}
