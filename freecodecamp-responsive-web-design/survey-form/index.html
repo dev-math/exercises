@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -15,7 +18,7 @@
     <main>
       <form>
         <label for="email">Email</label>
-        <input type="email" name="email" placeholder="johndoe@provider.com" id="email" required>
+        <input type="email" name="email" placeholder="johndoe@site.com" id="email" required>
         <label for="name">Name (Optional)</label>
         <input type="text" name="name" placeholder="John Doe" id="name">
 
@@ -29,14 +32,17 @@
         <fieldset>
           <legend>Add if you want</legend>
 
-          <input type="checkbox" name="extras" value="peanut" id="extras-peanut">
-          <label for="extras-peanut">Peanut</label>
+          <label>
+            <input type="checkbox" name="extras" value="peanut">Peanut
+          </label>
 
-          <input type="checkbox" name="extras" value="nutella" id="extras-nutella">
-          <label for="extras-nutella">Nutella</label>
+          <label>
+            <input type="checkbox" name="extras" value="nutella">Nutella
+          </label>
 
-          <input type="checkbox" name="extras" value="chantilly" id="extras-chantilly">
-          <label for="extras-chantilly">Chantilly</label>
+          <label>
+            <input type="checkbox" name="extras" value="chantilly">Chantilly
+          </label>
         </fieldset>
 
         <label for="mass">Mass (kg)</label>
@@ -47,11 +53,13 @@
 
         <fieldset>
           <legend>Payment</legend>
-          <input type="radio" name="payment" value="cash" id="pay-cash">
-          <label for="pay-cash">Cash</label>
+          <label>
+            <input type="radio" name="payment" value="cash">Cash
+          </label>
 
-          <input type="radio" name="payment" value="card" id="pay-card">
-          <label for="pay-card">Card</label>
+          <label>
+            <input type="radio" name="payment" value="card">Card
+          </label>
         </fieldset>
      </form>
     </main>

@@ -10,7 +10,27 @@
 }
 
 :root {
-  --ff-primary: "Example", sans-serif;
+  --ff-primary: "Montserrat", sans-serif;
 }
 
+body {
+  background: radial-gradient(ellipse at 60% 60%, #fdfcdc, #fed9b7);
+  color: #7c1328;
+  font-family: var(--ff-primary);
+  min-height: 100vh;
+  padding: 1rem 10rem;
+  text-align: center;
+}
 
+header {
+  margin: 1rem 0;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+form label {
+}
