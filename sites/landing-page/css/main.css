@@ -36,16 +36,21 @@ ul {
 
 :root {
   --color-accent: 255, 204, 0;
-  --color-accent-comp: 0, 255, 255;
-  --color-dark: 68, 68, 68;
+  --color-accent-comp: 0, 71, 71;
+  --color-dark: 26, 26, 26;
   --color-light: 255, 255, 255;
   --ff-primary: "Montserrat", sans-serif;
+  --fs-body: 1rem;
+  --fs-h1: 1.75rem;
+  --fs-h2: 1.5rem;
+  --fs-h3: 1.25rem;
 }
 
 body {
   background-color: rgb(var(--color-dark));
   color: rgb(var(--color-light));
   font-family: var(--ff-primary);
+  font-size: var(--fs-body);
   line-height: 1.5;
   text-align: center;
 }
@@ -63,27 +68,63 @@ section {
   font-weight: 700;
 }
 
+nav {
+  background-color: rgb(var(--color-accent-comp));
+  display: flex;
+  font-size: var(--fs-h2);
+  justify-content: space-between;
+  left: 0;
+  padding: 0 0.7em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav button {
+  background-color: unset;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  right: 0.7em;
+  top: 0;
+  z-index: 999;
+}
+
+.primary-navigation {
+  background: rgb(var(--color-accent));
+  inset: 0 0 0 30%;
+  padding: min(30vh, 10em) 2em;
+  position: fixed;
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
+.primary-navigation[data-visible="true"] {
+  transform: translateX(0);
+}
+
+.primary-navigation a {
+  color: rgb(var(--color-dark));
+  font-weight: bold;
+  text-shadow: 2px 2px rgb(var(--color-light));
+}
+
 /* hero */
 
 .hero-img, iframe {
   border: 0.5em solid rgb(var(--color-accent));
   box-shadow: 1em 1em rgb(var(--color-accent-comp));
-}
-
-.hero-img {
   margin: 1em auto;
   width: 80vw;
-}
-
-iframe {
-
 }
 
 form {
   padding: 0.5rem 0;
 }
 
-button {
+form button {
   background-color: rgb(var(--color-accent));
   border: none;
   border-radius: 1rem;
@@ -93,11 +134,11 @@ button {
   transition: 0.5s;
 }
 
-button:hover {
+form button:hover {
   background-color: rgba(var(--color-accent), 0.9)
 }
 
-button:active {
+form button:active {
   box-shadow: 0 5px rgb(var(--color-accent-comp));
   transition: none;
   transform: translateY(4px);
@@ -105,13 +146,17 @@ button:active {
 
 /* sections */
 
-section li {
-  font-size: 1.5rem;
+h2 {
+  font-size: var(--fs-h2);
 }
 
-.bi {
+section li {
+  font-size: var(--fs-h3);
+}
+
+section .bi {
   color: rgb(var(--color-accent));
-  font-size: 2rem;
+  font-size: 2em;
   margin: 0 0.5em;
   vertical-align: middle;
 }
@@ -130,3 +175,45 @@ footer a:hover{
   color: rgb(var(--color-light));
 }
 
+
+@media only screen and (min-width: 992px) {
+  :root { 
+    --fs-h1: 1.5rem;
+    --fs-h2: 1.25rem;
+    --fs-h3: 1rem;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .primary-navigation {
+    background: unset; 
+    padding: inherit;
+    position: unset;
+    transform: translateX(0);
+    display: flex;
+    justify-content: right;
+    gap: 3em;
+  }
+
+
+  .primary-navigation a {
+    text-shadow: none;
+  }
+  
+  .primary-navigation a:hover {
+    color: rgb(var(--color-light));
+  }
+
+  .hero {
+    align-items: center;
+    display: grid;
+    gap: 3em;
+    grid-template-areas: "content img";
+  }
+
+  .hero img {
+    grid-area: 'img';
+  }
+}
