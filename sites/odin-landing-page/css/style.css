@@ -1,0 +1,66 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+/* styles */
+:root {
+  --color-accent: #3882f6;
+  --color-dark: #1f2937;
+  --color-light: #f9faf8;
+  --color-white: #e5e7eb;
+  --ff-primary: "Roboto", sans-serif;
+}
+
+/* nav */
+header {
+  background: var(--color-dark);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul li {
+  color: var(--color-white);
+  display: inline;
+  font-size: 1.125rem;
+}
+
+.logo {
+  color: var(--color-light);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
