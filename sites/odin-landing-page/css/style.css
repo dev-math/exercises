@@ -33,6 +33,11 @@ ul {
   padding: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 /* styles */
 :root {
   --color-accent: #3882f6;
@@ -45,6 +50,7 @@ ul {
 /* nav */
 header {
   background: var(--color-dark);
+  padding: 1em 5em;
 }
 
 nav {
@@ -53,14 +59,32 @@ nav {
   justify-content: space-between;
 }
 
-nav ul li {
+nav ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+nav ul li a {
   color: var(--color-white);
-  display: inline;
   font-size: 1.125rem;
+  padding: 0 0.8em;
+}
+
+.logo:hover, nav ul li a:hover {
+  color: var(--color-accent);
 }
 
 .logo {
   color: var(--color-light);
   font-size: 1.5rem;
+  font-weight: 800;
   text-decoration: none;
+}
+
+/* hero */
+.hero {
+  background: var(--color-dark);
+  color: var(--color-light);
 }
