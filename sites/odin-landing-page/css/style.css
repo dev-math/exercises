@@ -30,6 +30,7 @@ img {
 }
 
 ul {
+  list-style: none;
   padding: 0;
 }
 
@@ -44,47 +45,115 @@ a {
   --color-dark: #1f2937;
   --color-light: #f9faf8;
   --color-white: #e5e7eb;
-  --ff-primary: "Roboto", sans-serif;
+  --container-spacer: 14rem;
+  --ff-primary: "Roboto";
+  --fs-body: 1.125rem;
+  --fs-h2: 2.25rem;
+  --fs-logo: 1.5rem;
+  --fs-xl: 3rem;
 }
 
-/* nav */
-header {
-  background: var(--color-dark);
-  padding: 1em 5em;
+body {
+  font-family: var(--ff-primary), sans-serif;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.container {
+  padding: 0 var(--container-spacer);
 }
 
-nav ul {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
+/* set list items to one row */
+li {
+  display: inline-block;
 }
 
-nav ul li a {
-  color: var(--color-white);
-  font-size: 1.125rem;
-  padding: 0 0.8em;
+/* add hover effect to all links */
+a:not([class]) {
+  transition: 0.3s;
 }
 
-.logo:hover, nav ul li a:hover {
+a:not([class]):hover {
   color: var(--color-accent);
 }
 
-.logo {
+/* hero, footer and header bg colors */
+.hero, footer, header {
+  background: var(--color-dark);
+}
+
+/* set buttons, logo and h1 same font style */
+.btn, .logo, h1 {
   color: var(--color-light);
-  font-size: 1.5rem;
   font-weight: 800;
-  text-decoration: none;
+}
+
+/* navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 14rem;
+}
+
+.logo {
+  font-size: var(--fs-logo);
+}
+
+nav li a {
+  color: var(--color-white);
+  font-size: var(--fs-body);
+  padding: 0 0.5em;
 }
 
 /* hero */
 .hero {
-  background: var(--color-dark);
+  column-gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5rem var(--container-spacer) 5rem;
+}
+
+.hero img {
+  grid-area: 1 / 2 / 4 / 3;
+}
+
+h1 {
+  font-size: var(--fs-xl);
+}
+
+.hero p {
+  color: var(--color-white);
+  font-size: var(--fs-body);
+}
+
+.btn {
+  border-radius: 10px;
+  background: var(--color-accent);
+  color: var(--color-white);
+  display: inline-block;
+  line-height: 1;
+  margin-top: 1em;
+  padding: 0.5em 2em;
+  text-align: center;
+  width: fit-content;
+}
+
+/* info section */
+h2 {
+  color: var(--color-dark);
+  font-size: var(--fs-h2);
+  text-align: center;
+}
+
+section ul {
+  display: flex;
+}
+
+figcaption {
+  font-size: var(--fs-body);
+  text-align: center;
+}
+
+/* footer */
+footer {
   color: var(--color-light);
+  text-align: center;
 }
