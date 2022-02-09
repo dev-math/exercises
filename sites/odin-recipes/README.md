@@ -12,4 +12,4 @@ Home:
 
 An example recipe page:
 
-!["A screenshot of the Odin Recipes example page"](https://i.imgur.com/v6QOo19.png)
+!["A screenshot of the Odin Recipes example page"](https://i.imgur.com/HMHzX27.png)
