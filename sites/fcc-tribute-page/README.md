@@ -7,7 +7,9 @@ FreeCodeCamp.com Responsive Web Design Certification Project - ["Build A Tribute
 [Live Preview](https://htmlpreview.github.io/?https://github.com/dev-math/projects/blob/master/sites/fcc-tribute-page/index.html)
 
 Desktop:
+
 !["A screenshot of the Tribute Page project"](https://i.imgur.com/WLCwR6e.png)
 
 Mobile:
+
 !["A screenshot of the Tribute Page project"](https://i.imgur.com/LSMrXtb.png)
