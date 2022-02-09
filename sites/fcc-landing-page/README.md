@@ -6,5 +6,10 @@ FreeCodeCamp.com Responsive Web Design Certification Project - ["Build A Product
 
 [Live Preview](https://htmlpreview.github.io/?https://github.com/dev-math/projects/blob/master/sites/fcc-landing-page/index.html)
 
-Screenshot:
+Mobile:
+
+!["A screenshot of the Freecodecamp Landing Page project"](https://i.imgur.com/NAfI7cc.png)
+
+Desktop:
+
 !["A screenshot of the Freecodecamp Landing Page project"](https://i.imgur.com/cS8uATL.png)
