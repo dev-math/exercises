@@ -2,7 +2,7 @@
 
 Proposed by [The Odin Project](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/landing-page)
 
-[Live Preview](https://htmlpreview.github.io/?https://github.com/dev-math/projects/blob/master/sites/odin-landing-page/index.html)
+[Live Preview](https://htmlpreview.github.io/?https://github.com/dev-math/exercises/blob/master/theodinproject/odin-landing-page/index.html)
 
 Screenshot: 
 

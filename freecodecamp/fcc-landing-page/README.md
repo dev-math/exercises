@@ -4,7 +4,7 @@ Proposed by [freecodecamp](https://www.freecodecamp.org/learn/responsive-web-des
 
 FreeCodeCamp.com Responsive Web Design Certification Project - ["Build A Product Landing Page"](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
 
-[Live Preview](https://htmlpreview.github.io/?https://github.com/dev-math/projects/blob/master/sites/fcc-landing-page/index.html)
+[Live Preview](https://htmlpreview.github.io/?https://github.com/dev-math/exercises/blob/master/freecodecamp/fcc-landing-page/index.html)
 
 Mobile:
 

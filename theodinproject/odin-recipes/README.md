@@ -2,7 +2,7 @@
 
 Proposed by [The Odin Project](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/recipes)
 
-[Live Preview](https://htmlpreview.github.io/?https://github.com/dev-math/projects/blob/master/sites/odin-recipes/index.html)
+[Live Preview](https://htmlpreview.github.io/?https://github.com/dev-math/exercises/blob/master/theodinproject/odin-recipes/index.html)
 
 Screenshot: 
 
