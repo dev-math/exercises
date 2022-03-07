@@ -1,0 +1,47 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* styles */
+:root {
+  --color-accent: 255, 204, 0;
+  --color-accent-comp: 0, 71, 71;
+  --color-dark: 26, 26, 26;
+  --color-light: 255, 255, 255;
+  --ff-primary: "Bowlby One SC";
+  --fs-body: 1rem;
+  --fs-h1: 1.75rem;
+  --fs-h2: 1.5rem;
+  --fs-h3: 1.25rem;
+}
+
+body {
+  background: #EDF2F4;
+  color: #D90429;
+  font-family: var(--ff-primary), sans-serif;
+  font-size: var(--fs-body);
+  text-align: center;
+}
+
+.game-option {
+  background: unset;
+  border: none;
+  font-size: 3rem;
+  transition: 0.3s ease-out;
+}
+
+.game-option:hover {
+  transform: translateY(-8px) scale(1.5);
+}
