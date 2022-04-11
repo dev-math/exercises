@@ -1,0 +1,60 @@
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* styles */
+:root {
+  --ff-primary: "Orbitron";
+  --ff-secondary: "Montserrat";
+  --fs-body: 1rem;
+}
+
+body {
+  font-family: var(--ff-secondary);
+}
+
+.calculator {
+  font-family: var(--ff-primary);
+  width: 200px;
+}
+
+.calculator_keys, .calculator_keys button {
+  font-family: inherit;
+}
+
+.calculator_keys {
+  display: grid;
+  grid-template: repeat(5,1fr) / repeat(4,1fr);
+}
+
+.calculator_keys button {
+  border: none;
+}
+
+.col-span-2 {
+  grid-row: span 2;
+}
+
+.row-span-2 {
+  grid-column: span 2;
+}
+
+.calculator_display {
+  background: black;
+  color: white;
+  width: 200px;
+  height: 50px;
+}
