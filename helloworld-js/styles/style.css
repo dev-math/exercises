@@ -1,0 +1,41 @@
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+
+html {
+  background-color: rgb(109, 109, 109);
+}
+
+body {
+  width: 1200px;
+  margin: 25px auto 0;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0px 10px 10px;
+  border: 30px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: rgb(37, 37, 37);
+  text-shadow: 1px 1px 5px black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
