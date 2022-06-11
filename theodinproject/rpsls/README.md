@@ -1,5 +1,13 @@
-# jankenls
-Rock, Paper, Scissors, Lizard, Spock
+# rpsls
+Rock Paper Scissors Lizard Spock
+
+Proposed by [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
+
+[Live Preview](https://htmlpreview.github.io/?https://github.com/dev-math/exercises/blob/master/theodinproject/rpsls/index.html)
+
+Screenshot: 
+
+!["A screenshot of the Rock Paper Scissors Lizard Spock project"](https://i.imgur.com/1NAcfSR.png)
 
 ## Credits:
 
