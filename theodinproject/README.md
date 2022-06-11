@@ -13,6 +13,9 @@ Proposed by [The Odin Project](https://www.theodinproject.com/paths/foundations/
 * [Rock, Paper, Scissors](https://github.com/dev-math/exercises/tree/master/theodinproject/rpsls)
 Proposed by [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
 
+* [Etch a Sketch](https://github.com/dev-math/etch-a-sketch)
+Proposed by [The Odin Project](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project)
+
 ## Others
 
 * [Javascript exercises](https://github.com/dev-math/exercises/tree/master/theodinproject/javascript-exercises)
