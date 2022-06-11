@@ -10,6 +10,9 @@ Proposed by [The Odin Project](https://www.theodinproject.com/paths/foundations/
 * [Odin Recipes](https://github.com/dev-math/exercises/tree/master/theodinproject/odin-recipes)
 Proposed by [The Odin Project](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/recipes)
 
+* [Rock, Paper, Scissors](https://github.com/dev-math/exercises/tree/master/theodinproject/rpsls)
+Proposed by [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
+
 ## Others
 
 * [Javascript exercises](https://github.com/dev-math/exercises/tree/master/theodinproject/javascript-exercises)
