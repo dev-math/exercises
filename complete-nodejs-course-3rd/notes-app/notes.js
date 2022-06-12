@@ -20,11 +20,12 @@ const addNote = (title, body) => {
   const notes = loadNotes();
   const duplicateNotes = notes.filter((note) => note.title === title);
   if (duplicateNotes.length != 0) {
-    return console.log(`Duplicate note: ${title}\nUse other title`);
+    return console.log(chalk.red.inverse.bold(`Duplicate note: "${title}"\nUse other title`));
   }
 
   notes.push({ title, body });
   saveNotes(notes);
+  return console.log(chalk.green.inverse.bold(`Note added!`));
 };
 
 const saveNotes = (notes) => {
