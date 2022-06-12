@@ -2,15 +2,64 @@
 <html>
 
 <head>
-    <meta charset='UTF-8'>
-    <title>XMLHttpRequest #01</title>
-    <link rel='stylesheet' href='css/estilo.css'>
+  <meta charset='UTF-8'>
+  <title>XMLHttpRequest #01</title>
+  <link rel='stylesheet' href='css/estilo.css'>
 </head>
 
 <body class="conteudo exercicio">
-    <h1>Estados</h1>
-
+  <h2>Estados</h1>
     <script>
-        // ...
+      function ajax(config) {
+        const xhr = new XMLHttpRequest();
+        xhr.open(config.method, config.url, true);
+
+        xhr.onload = e => {
+          if (xhr.status == 200) {
+            config.sucess(xhr.response);
+          } else if (xhr.status >= 400) {
+            config.error({
+              code: xhr.status,
+              text: xhr.statusText
+            });
+          }
+        }
+
+        xhr.send()
+      }
+
+      ajax({
+        url: "dados/estados.json",
+        method: "GET",
+        sucess(response) {
+          const estados = JSON.parse(response);
+          const lines = estados.map(estado => {
+            const tdId = document.createElement("td");
+            tdId.innerHTML = estado.id;
+
+            const tdName = document.createElement("td");
+            tdName.innerHTML = estado.nome;
+
+            const tdSigla = document.createElement("td");
+            tdSigla.innerHTML = estado.sigla;
+
+            const tr = document.createElement("tr");
+            tr.appendChild(tdId);
+            tr.appendChild(tdName);
+            tr.appendChild(tdSigla);
+
+            return tr;
+          });
+
+          const table = document.createElement('table');
+          lines.forEach(line => table.appendChild(line));
+
+          document.body.appendChild(table);
+        },
+        error(erro) {
+          const msg = document.createTextNode(`${erro.code}: ${erro.text}`);
+          document.body.appendChild(msg);
+        }
+      });
     </script>
 </body>
