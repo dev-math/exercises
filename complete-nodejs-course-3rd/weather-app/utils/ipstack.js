@@ -11,10 +11,7 @@ const ipstack = (cb) => {
     } else if (res.body.error) {
       cb(res.body.error.info);
     } else {
-      cb(null, {
-        latitude: res.body.latitude,
-        longitude: res.body.longitude,
-      });
+      cb(null, { latitude, longitude } = res.body);
     }
   });
 }
