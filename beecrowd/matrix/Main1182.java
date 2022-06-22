@@ -15,8 +15,7 @@ public class Main1182 {
     double[][] m = new double[12][12];
     for (int i = 0; i < m.length; i++) {
       for (int j = 0; j < m.length; j++) {
-        // m[i][j] = in.nextDouble();
-        m[i][j] = 1;
+        m[i][j] = in.nextDouble();
       }
     }
 
